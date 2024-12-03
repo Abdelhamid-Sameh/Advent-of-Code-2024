@@ -1,7 +1,6 @@
-package Day1;
+package Day1Part1;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,7 +30,7 @@ public class Main {
         List<Integer> rightLocations = new ArrayList<>();
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src/Day1/Day1_input.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("src/Day1Part1/Day1Part1_input.txt"));
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.trim().split(" {3}");
@@ -45,11 +44,5 @@ public class Main {
         }
 
         System.out.println(totaldistance(leftLocations,rightLocations));
-
-//        System.out.println("Left Numbers: " + leftLocations);
-//        System.out.println("Right Numbers: " + rightLocations);
-//        int[] a = {3,4,2,1,3,3};
-//        int[] b = {4,3,5,3,9,3};
-//        System.out.println(totaldistance(a,b));
     }
 }
