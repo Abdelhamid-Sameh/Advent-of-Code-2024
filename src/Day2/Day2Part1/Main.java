@@ -1,4 +1,4 @@
-package Day2Part1;
+package Day2.Day2Part1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -40,7 +40,7 @@ public class Main {
     public static void main(String[] args) {
         List<List<Integer>> Reports = new ArrayList<>();
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src/Day2Part1/Day2Part1_input.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("src/Day2/Day2Part1/Day2Part1_input.txt"));
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.trim().split(" ");
